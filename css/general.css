@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* Responsive Setup */
+
+@-moz-viewport { width: device-width; scale: 1;}
+@-ms-viewport { width: device-width; scale: 1;}
+@-webkit-viewport { width: device-width; scale: 1;}
+@-o-viewport { width: device-width; scale: 1;}
+@viewport { width: device-width; scale: 1;}
+
+html{
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+/* CSS */
+
+.logo {
+	width:7rem;
+	height:7rem;
+    background: #fff url(../images/logo.svg)no-repeat center center;
+    margin:0 auto;
+    margin-top:1rem;
+    display:block;
+}
+
+
+h2, h3, h4, h5, li {
+	text-align:center;	
+}
+
+h5 {
+	font-weight:400;	
+}
+
+h3 {
+	display: block;
+	background-color: #2cbeff;
+	height:3rem;
+	padding-top:1rem;
+    color:#fff;
+}
+
+html, body{
+	font-family: sans-serif;
+	color:#666;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+h1, 
+.main,
+.copyright{
+	width: 90%;
+	margin: 1rem auto;
+}
+
+
+.pool {
+    background: url('../images/pool.jpg') no-repeat center center;
+    height:8rem;
+    font-size:2rem;
+    font-weight:900;
+    text-align:center;
+    color:#fff;
+    text-transform:uppercase;
+    padding-top:3.3rem;
+    z-index:0;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited {
+	display: block;
+	height: 40px;
+	width: 40px;
+    margin: 0 auto;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+	background: #fff url(../images/nav-icon-hover-01.svg) no-repeat center center;
+}
+
+.nav a,
+.nav a:link,
+.nav a:visited {
+	display: block;	
+	text-align: center;
+	background-color: #2cbeff;
+	color: #fff; 
+	text-decoration: none;
+	padding: 1rem;
+	
+}
+
+.nav a:hover {
+	display: block;	
+	text-align: center;
+	background-color: #2cabff;
+	color: #fff; 
+	text-decoration: none;
+	padding: 1rem;
+}
+
+.nav-top {
+	display:none;
+}
+
+    .nav-top[data-state="collapsed"] {
+	display: block;
+}
+
+
+.prices-table th{
+    text-transform:uppercase;
+    font-weight:800;
+    padding: 0.5rem 1rem;
+    line-height:1.5rem;
+}
+.prices-table tr:nth-child(even){
+    background-color:#f1f1f1;
+    line-height:3rem;
+}
+
+.prices-table tr:nth-child(odd){
+    line-height:3rem;
+}
+
+.prices-table {
+    text-align:center;
+    margin:0 auto;
+    margin-top:2rem;
+}
+
+
+.schedule-table{
+    display:none;
+}
+
+.schedule-table th{
+    text-transform:uppercase;
+    font-weight:800;
+    padding: 0.5rem 1rem;
+    line-height:1.5rem;
+}
+.schedule-table tr:nth-child(even){
+    background-color:#f1f1f1;
+    line-height:3rem;
+}
+
+.schedule-table tr:nth-child(odd){
+    line-height:3rem;
+}
+
+.schedule-table {
+    text-align:center;
+    margin:0 auto;
+    margin-top:2rem;
+}
+
+
+.schedule-table{
+    display:none;
+}
+
+@media only screen and (min-width: 29em) {
+
+.schedule {
+     display:none;   
+    }
+    
+.prices-list{
+     display:none;   
+    }
+    
+.prices-table {
+     display:table;   
+    }
+
+    
+    .prices-table {
+     display:table;
+        overflow:auto;
+    }
+    
+    .nav{
+		overflow:auto;
+        margin-top:1rem;
+	}
+
+	.nav li{
+		float:left;
+		width: 33.33%;	
+	}
+
+
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited {
+		display:none;
+	}
+	
+	.nav-top{
+		display: block;	
+	}
+    
+    
+}
+
+
+@media only screen and (min-width: 43em) {
+   
+    header{
+     background-color:#2cbeff;
+    height:7rem;
+        margin-bottom:2rem;
+    }
+  
+    
+    .logo {
+        width:7rem;
+        height:7rem;
+        background: #2cbeff url(../images/logo.svg)no-repeat center center;
+        margin-left:1rem;
+        margin-top:0rem;
+        display:block;
+        float:left;
+    }
+    .nav a{
+		overflow:auto;
+        margin-top:1.5rem;
+	}
+
+	.nav-top li{
+		width: 20%;
+		float:right;
+		width: auto;
+        margin-top:1.5rem;
+		
+	}
+
+
+	.nav-btn,
+	.nav-btn:link,
+	.nav-btn:visited {
+		display:none;
+	}
+	
+    
+    header{
+        overflow:auto;
+    }
+    
+    	.col{
+		width: 47.5%;	
+	}
+	
+	.left{
+		float:left;	
+	}
+	
+	.right{
+		float:right;	
+	}
+    
+    .main{
+			overflow:auto;
+	}
+
+}
+
+
+
+footer p {
+	text-align:center;	
+}
+
+
+
+
+
